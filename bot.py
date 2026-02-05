@@ -1,9 +1,10 @@
+import os
 import telebot
 import datetime
 from datetime import datetime as dt
 
 # Замени на свой токен
-BOT_TOKEN = "8080957117:AAGl5y4nb90wyAcD7j6ThiAyk8bkT__XrVQ"
+BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 TARGET_CHAT_ID = -1002159699404
 
 bot = telebot.TeleBot(BOT_TOKEN)
