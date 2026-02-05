@@ -46,7 +46,7 @@ def handle_answer(message):
         else:
             answers = user_data[user_id]['answers']
             username = f"@{message.from_user.username}" if message.from_user.username else f"id{user_id}"
-            time_str = datetime.now().strftime("%H:%M, %d %b %Y")
+            time_str = dt.now().strftime("%H:%M, %d %b %Y")
             
             form_text = f"Ответ пользователя {username}\nВремя: {time_str}\n\n"
             for question, field in QUESTIONS:
